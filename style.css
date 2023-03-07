@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  color: white;
+  background-color: #1a202c;
+  font-family: Poppins, sans-serif;
+}
+a {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+a:hover {
+  text-decoration-line: underline;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem /* 24px */;
+  padding-right: 1.5rem /* 24px */;
+  padding-top: 3rem /* 48px */;
+  padding-bottom: 3rem /* 48px */;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 2.5rem /* 40px */;
+  align-items: center;
+  gap: 10rem /* 40px */;
+}
+.introcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem /* 24px */;
+  width: 100%;
+  position: relative;
+}
+.major {
+  font-weight: 600;
+  color: #7265dd;
+  font-size: 3rem;
+  line-height: 1;
+}
+.name {
+  font-weight: 600;
+  font-size: 4.5rem /* 72px */;
+  line-height: 1;
+}
+.intro {
+  text-align: justify;
+  --tw-text-opacity: 1;
+  color: rgb(125 125 125 / var(--tw-text-opacity));
+}
+
+.linkpersonalsite:hover {
+  text-decoration-line: underline;
+}
+.avatarContainer {
+  width: 500px;
+  height: 470px;
+  position: absolute;
+  bottom: 0px;
+}
+.avatarContainer img {
+  position: absolute;
+  bottom: 0px;
+}
+.bganimate {
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+  width: 350px;
+  --tw-gradient-to: #d946ef;
+  --tw-gradient-from: #4c1d95;
+  --tw-gradient-to: rgb(76 29 149 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(168 85 247 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #a855f7, var(--tw-gradient-to);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.background-animate {
+  background-size: 400%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+.figurecontainer {
+  position: relative;
+  width: 100%;
+}
+.navbar1 {
+  padding-top: 1.5rem /* 24px */;
+  padding-bottom: 1.5rem /* 24px */;
+  padding-left: 2.5rem /* 40px */;
+  padding-right: 2.5rem /* 40px */;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+  z-index: 20;
+}
+.namenavbar {
+  display: flex;
+  gap: 2rem /* 32px */;
+  align-items: center;
+}
+.myname {
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  font-weight: bold;
+}
+.dot {
+  --tw-text-opacity: 1;
+  color: rgb(114 101 221 / var(--tw-text-opacity));
+}
+.containerlogo {
+  height: fit-content;
+  align-items: center;
+  gap: 1rem /* 32px */;
+  display: none;
+}
+
+.containerbiodata {
+  max-width: 56rem /* 896px */;
+  margin-top: 4rem /* 64px */;
+}
+.titlebiodata {
+  font-size: 2.25rem /* 36px */;
+  line-height: 2.5rem /* 40px */;
+  font-weight: 600;
+}
+.containertable1 {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 0.5rem /* 8px */;
+  margin-top: 2rem /* 32px */;
+  overflow: auto;
+}
+.thformat {
+  padding: 1rem /* 16px */;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem /* 32px */;
+}
+.text-left {
+  text-align: left;
+}
+.bordertop {
+  border-top: 1px solid white;
+}
+
+footer {
+  text-align: center;
+  margin: 50px;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  30% {
+    background-position: 100% 50%;
+    /* border-radius: 100% 100% 100% 100%; */
+  }
+  80% {
+    background-position: 80% 10%;
+    /* border-radius: 70% 30% 65% 35% / 20% 41% 59% 80%; */
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .containerlogo {
+    display: flex;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .intro {
+    text-align: start;
+  }
+  .introcontainer {
+    gap: 2.5rem /* 56px */;
+    /* width: 33.333333%; */
+  }
+  .bganimate {
+    height: 500px;
+    width: 500px;
+  }
+  .contaier3 {
+    justify-content: center;
+    width: 33.333333%;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .contaier3 {
+    display: flex;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .main {
+    padding-left: 8rem /* 128px */;
+    padding-right: 8rem /* 128px */;
+  }
+}
